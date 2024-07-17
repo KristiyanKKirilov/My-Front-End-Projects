@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Kode Mono, sans-serif;
+}
+
+body{
+    padding: 2em;
+    background-color: #919090;
+}
+
+body, button, input, select, option, textarea, fieldset, legend{
+    font: inherit;
+}
+
+.site-main{
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #24333C;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.site-header{
+    display: flex;
+    padding: 3em 3em 1em 3em;
+    justify-content: center;
+}
+
+
+.header{
+    padding: 1rem;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 1.6em;
+}
+
+
+.header.sign-up{
+    background-color: #1AB188;
+}
+
+.header.login{
+    background-color: #435359;
+    color: #9CAFAC;
+}
+
+.header.login:hover{
+    background-color: #169472;
+    color: #fff;
+}
+
+form{
+    padding: 2em 3em 3em 3em; 
+    
+}
+form h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
+.field{
+    display: flex;
+    padding: 1em 0;
+    flex-direction: column;
+    position: relative;
+}
+
+input{
+    padding: 0.5em 0.8em;
+    background-color: #24333C;
+    color: #9CAFAC;
+    border: 1px solid #9CAFAC; 
+}
+
+input[type='submit']{
+    margin-top: 1em;
+    padding: 1rem;
+    color: #fff;
+    background-color: #1AB188;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.row{
+    display: flex;
+    gap: 2em;
+}
+
+.row :nth-of-type(1),
+.row :nth-of-type(2){
+    flex-grow: 1;
+}
+
+.field label{
+    display: block;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: #9CAFAC;
+    font-size: 1.4rem;
+}
+
+input:required ~ label::after{
+    content: '*';
+    color:  #1AB188;
+    margin-left: 0.1em;
+}
+
+
+
+
